@@ -1,0 +1,7 @@
+{
+  "name": "k8s-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
