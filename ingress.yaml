@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: k8s-demo-ingress
+spec:
+  rules:
+  - host: k8s-demo.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: k8s-demo-service  # Must match your service name
+            port:
+              number: 80            # Must match your service port
+
